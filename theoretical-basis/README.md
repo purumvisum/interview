@@ -7,6 +7,16 @@ Resources:
 * [Factory Pattern (medium)](https://medium.com/front-end-weekly/understand-the-factory-design-pattern-in-plain-javascript-20b348c832bd)
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
+Сontents:
+* [Singleton](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#singleton)
+* [Factory](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#factory)
+* [Mixins](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mixins)
+* [Decorator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#decorator)
+* [Façade](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#façade)
+* [Mediator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mediator)
+* [Proxy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#proxy)
+* [Observer](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#observer)
+* [Strategy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#strategy)
 ----
 
 ### Singleton
