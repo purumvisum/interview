@@ -3,12 +3,23 @@
 ## Patterns
 
 Resources: 
-* [Learning JavaScript Design Patterns (Book by Addy Osmani)](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
-* [JavaScript Patterns (Book by Stoyan Stefanov)](http://index-of.es/JS/Stoyan%20Stefanov%20-%20JavaScript%20Patterns%202010.pdf)
+* [JavaScript Patterns](http://index-of.es/JS/Stoyan%20Stefanov%20-%20JavaScript%20Patterns%202010.pdf)
 * [Factory Pattern (medium)](https://medium.com/front-end-weekly/understand-the-factory-design-pattern-in-plain-javascript-20b348c832bd)
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
-__*Singleton*__
+Сontents:
+* [Singleton](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#singleton)
+* [Factory](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#factory)
+* [Mixins](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mixins)
+* [Decorator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#decorator)
+* [Façade](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#façade)
+* [Mediator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mediator)
+* [Proxy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#proxy)
+* [Observer](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#observer)
+* [Strategy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#strategy)
+----
+
+### Singleton
 
 Creating only one object of a “class.” We looked at several approaches if you want
 to substitute the idea of a class with a constructor function and preserve the Javalike syntax. Otherwise, technically all objects in JavaScript are singletons. And also
@@ -19,7 +30,7 @@ Usage:
 * Database connections
 * Config files
 
-[jsfiddle](https://jsfiddle.net/PurumVisum/evgr41qw/)
+[__jsfiddle singleton playground__](https://jsfiddle.net/PurumVisum/evgr41qw/)
 ```
 class SingletonClass {
     constructor() {
@@ -33,7 +44,10 @@ class SingletonClass {
     }
 }
 ```
-__*Factory*__
+
+----
+
+### Factory
 
 A method that creates objects of type specified as a string at runtime.
 We call the function Animal and both times it gives us a new animal instance.
@@ -44,7 +58,7 @@ A factory function is any function which is not a class or constructor that retu
 In JavaScript, any function can return an object.
  When it does so without the new keyword, it’s a factory function.
 
-[jsfiddle](https://jsfiddle.net/PurumVisum/pz4jru9q/)
+[__jsfiddle factory playground__](https://jsfiddle.net/PurumVisum/pz4jru9q/)
 
 ```
 const Animal = function(name){
@@ -62,7 +76,7 @@ rabbit.walk() // rabbit walks
 cat.walk() // cat walks
 ```
 
-*Mixins*
+#### Mixins
 
 To further add functionality we use __mixins__ which is just a fancy way of describing an 
 object which doesn’t have state itself but has some methods attached to it.
@@ -87,8 +101,11 @@ const KillingAnimal = function(name) {
 }
 ```
 
-__*Iterator*__
-[jsfiddle](https://jsfiddle.net/PurumVisum/xf6r0qug/)
+----
+
+### Iterator
+
+[__jsfiddle iterator playground__](https://jsfiddle.net/PurumVisum/xf6r0qug/)
 Providing an API to loop over and navigate around a complex custom data
 structure.
 
@@ -102,7 +119,7 @@ Built-in iterables
 ```String```,``` Array ``` , ```TypedArray```, ```Map``` and ```Set``` are all built-in iterables, 
 because their prototype objects all have a Symbol.iterator method.
 
-*Iterator*
+__*Iterator*__
 ```
 var myIterable = {
   *[Symbol.iterator]() {
@@ -123,7 +140,7 @@ try {
   console.log(error);
 }
 ``` 
-*Simple Object*
+__*Simple Object*__
 ``` 
 var myObject = {
 
@@ -141,93 +158,45 @@ try {
 }
 ``` 
 
-__*Decorator*__
+----
 
-[jsfiddle](https://jsfiddle.net/PurumVisum/drz60nhk/)
+### Decorator
 
 Tweaking objects at runtime by adding functionality from predefined decorator
 objects.
 
-*at the time of writing, the decorators are currently in “Stage 2 Draft” form, meaning that they are mostly finished but still subject to changes*
-```
-function readonly(target, name, descriptor) {
-  descriptor.writable = false;
-  return descriptor;
-}
-class Job {
-  @readonly
-  title() { return 'CEO' }
-}
-``` 
-*Mobx decorators (works only with babel or TS)*
-``` 
-import { observable, computed, action } from "mobx"
+----
 
-class Timer {
-    @observable start = Date.now()
-    @observable current = Date.now()
+### Strategy
 
-    @computed
-    get elapsedTime() {
-        return this.current - this.start + "milliseconds"
-    }
+Keeping the same interface while selecting the best strategy to handle the specific
+task (context).
 
-    @action
-    tick() {
-        this.current = Date.now()
-    }
-}
-``` 
-*Create decorator (example in the jsFiddle)*
-``` 
-function doSomething(name) {
-  console.log('Hello, ' + name);
-}
+----
 
-function loggingDecorator(wrapped) {
-  return function() {
-    console.log('Starting');
-    const result = wrapped.apply(this, arguments);
-    console.log('Finished');
-    return result;
-  }
-}
-
-const wrapped = loggingDecorator(doSomething);
-
-doSomething('Daria');
-console.log("----------")
-wrapped('Graham');
-``` 
-
-__*Façade*__
+### Façade
 
 Providing a more convenient API by wrapping common (or poorly designed)
 methods into a new one.
 
-__*Proxy*__
+----
+
+### Proxy
 
 Wrapping an object to control the access to it, with the goal of avoiding expensive
 operations by either grouping them together or performing them only when really
 necessary.
 
-__*Mediator*__
+----
+
+### Mediator
 
 Promoting loose coupling by having your objects not “talk” to each other directly
 but only though a mediator object.
 
-__*Observer*__
+----
 
-The Observer is a design pattern where an object (known as a subject) maintains a list of
- objects depending on it (observers),
- automatically notifying them of any changes to state.
- 
- An Observable is simply an object where you can observe it's actions. So anything where you can listen to an action and then be told that action occurs is an Observable.
- 
- This means an Event Listener is one. Because you can listen to events and the events immediately notify you that they have happened.
+### Observer
 
-
-__*Strategy*__
-
-Keeping the same interface while selecting the best strategy to handle the specific
-task (context).
+Loose coupling by creating “observable” objects that notify all their observers when
+an interesting event occurs (also called subscriber/publisher or “custom events”).
