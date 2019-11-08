@@ -30,7 +30,7 @@ Usage:
 * Database connections
 * Config files
 
-[jsfiddle](https://jsfiddle.net/PurumVisum/evgr41qw/)
+[__jsfiddle singleton playground__](https://jsfiddle.net/PurumVisum/evgr41qw/)
 ```
 class SingletonClass {
     constructor() {
@@ -58,7 +58,7 @@ A factory function is any function which is not a class or constructor that retu
 In JavaScript, any function can return an object.
  When it does so without the new keyword, it’s a factory function.
 
-[jsfiddle](https://jsfiddle.net/PurumVisum/pz4jru9q/)
+[__jsfiddle factory playground__](https://jsfiddle.net/PurumVisum/pz4jru9q/)
 
 ```
 const Animal = function(name){
@@ -104,7 +104,8 @@ const KillingAnimal = function(name) {
 ----
 
 ### Iterator
-[jsfiddle](https://jsfiddle.net/PurumVisum/xf6r0qug/)
+
+[__jsfiddle iterator playground__](https://jsfiddle.net/PurumVisum/xf6r0qug/)
 Providing an API to loop over and navigate around a complex custom data
 structure.
 
@@ -139,7 +140,7 @@ try {
   console.log(error);
 }
 ``` 
-__*Simple Object*___
+__*Simple Object*__
 ``` 
 var myObject = {
 
