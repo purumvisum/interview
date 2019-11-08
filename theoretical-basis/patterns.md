@@ -6,6 +6,7 @@ Resources:
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
 Сontents:
+* [MVC](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mvc)
 * [Singleton](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#singleton)
 * [Factory](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#factory)
 * [Mixins](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mixins)
@@ -15,6 +16,38 @@ Resources:
 * [Proxy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#proxy)
 * [Observer](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#observer)
 * [Strategy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#strategy)
+----
+
+### MVC
+The Model View Controller (MVC) design pattern specifies that an application consist of a data model,
+ presentation information, and control information. 
+The pattern requires that each of these be separated into different objects.
+
+Design components
+
+* __Model__ 
+
+     Model represents shape of the data and business logic.
+     It maintains the data of the application. 
+     Model objects retrieve and store model state in a database.
+     Doesn't know about any other layers.
+    *Model is a data and business logic.*
+
+* __View__
+    
+    View is a user interface.
+     View display data using model to the user and also enables them to modify 
+    the data. *View is a User Interface.*
+
+* __Controller__
+   
+    Controller handles the user request.
+    Connect View and Model.
+     Typically, user interact with View, which in-turn raises 
+    appropriate URL request, this request will be handled by a controller. 
+    *The controller renders the appropriate view with the model data as a response.*
+
+Controller is a request handler.
 ----
 
 ### Singleton
@@ -198,3 +231,7 @@ but only though a mediator object.
 
 Loose coupling by creating “observable” objects that notify all their observers when
 an interesting event occurs (also called subscriber/publisher or “custom events”).
+
+----
+
+### MVVM
