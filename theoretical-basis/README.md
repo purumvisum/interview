@@ -3,7 +3,8 @@
 ## Patterns
 
 Resources: 
-* [JavaScript Patterns](http://index-of.es/JS/Stoyan%20Stefanov%20-%20JavaScript%20Patterns%202010.pdf)
+* [Learning JavaScript Design Patterns (Book by Addy Osmani)](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+* [JavaScript Patterns (Book by Stoyan Stefanov)](http://index-of.es/JS/Stoyan%20Stefanov%20-%20JavaScript%20Patterns%202010.pdf)
 * [Factory Pattern (medium)](https://medium.com/front-end-weekly/understand-the-factory-design-pattern-in-plain-javascript-20b348c832bd)
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
@@ -142,13 +143,62 @@ try {
 
 __*Decorator*__
 
+[jsfiddle](https://jsfiddle.net/PurumVisum/drz60nhk/)
+
 Tweaking objects at runtime by adding functionality from predefined decorator
 objects.
 
-__*Strategy*__
+*at the time of writing, the decorators are currently in “Stage 2 Draft” form, meaning that they are mostly finished but still subject to changes*
+```
+function readonly(target, name, descriptor) {
+  descriptor.writable = false;
+  return descriptor;
+}
+class Job {
+  @readonly
+  title() { return 'CEO' }
+}
+``` 
+*Mobx decorators (works only with babel or TS)*
+``` 
+import { observable, computed, action } from "mobx"
 
-Keeping the same interface while selecting the best strategy to handle the specific
-task (context).
+class Timer {
+    @observable start = Date.now()
+    @observable current = Date.now()
+
+    @computed
+    get elapsedTime() {
+        return this.current - this.start + "milliseconds"
+    }
+
+    @action
+    tick() {
+        this.current = Date.now()
+    }
+}
+``` 
+*Create decorator (example in the jsFiddle)*
+``` 
+function doSomething(name) {
+  console.log('Hello, ' + name);
+}
+
+function loggingDecorator(wrapped) {
+  return function() {
+    console.log('Starting');
+    const result = wrapped.apply(this, arguments);
+    console.log('Finished');
+    return result;
+  }
+}
+
+const wrapped = loggingDecorator(doSomething);
+
+doSomething('Daria');
+console.log("----------")
+wrapped('Graham');
+``` 
 
 __*Façade*__
 
@@ -168,5 +218,16 @@ but only though a mediator object.
 
 __*Observer*__
 
-Loose coupling by creating “observable” objects that notify all their observers when
-an interesting event occurs (also called subscriber/publisher or “custom events”).
+The Observer is a design pattern where an object (known as a subject) maintains a list of
+ objects depending on it (observers),
+ automatically notifying them of any changes to state.
+ 
+ An Observable is simply an object where you can observe it's actions. So anything where you can listen to an action and then be told that action occurs is an Observable.
+ 
+ This means an Event Listener is one. Because you can listen to events and the events immediately notify you that they have happened.
+
+
+__*Strategy*__
+
+Keeping the same interface while selecting the best strategy to handle the specific
+task (context).
