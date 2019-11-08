@@ -7,7 +7,9 @@ Resources:
 * [Factory Pattern (medium)](https://medium.com/front-end-weekly/understand-the-factory-design-pattern-in-plain-javascript-20b348c832bd)
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
-__*Singleton*__
+----
+
+### Singleton
 
 Creating only one object of a “class.” We looked at several approaches if you want
 to substitute the idea of a class with a constructor function and preserve the Javalike syntax. Otherwise, technically all objects in JavaScript are singletons. And also
@@ -32,7 +34,10 @@ class SingletonClass {
     }
 }
 ```
-__*Factory*__
+
+----
+
+### Factory
 
 A method that creates objects of type specified as a string at runtime.
 We call the function Animal and both times it gives us a new animal instance.
@@ -61,7 +66,7 @@ rabbit.walk() // rabbit walks
 cat.walk() // cat walks
 ```
 
-*Mixins*
+#### Mixins
 
 To further add functionality we use __mixins__ which is just a fancy way of describing an 
 object which doesn’t have state itself but has some methods attached to it.
@@ -86,7 +91,9 @@ const KillingAnimal = function(name) {
 }
 ```
 
-__*Iterator*__
+----
+
+### Iterator
 [jsfiddle](https://jsfiddle.net/PurumVisum/xf6r0qug/)
 Providing an API to loop over and navigate around a complex custom data
 structure.
@@ -101,7 +108,7 @@ Built-in iterables
 ```String```,``` Array ``` , ```TypedArray```, ```Map``` and ```Set``` are all built-in iterables, 
 because their prototype objects all have a Symbol.iterator method.
 
-*Iterator*
+__*Iterator*__
 ```
 var myIterable = {
   *[Symbol.iterator]() {
@@ -122,7 +129,7 @@ try {
   console.log(error);
 }
 ``` 
-*Simple Object*
+__*Simple Object*___
 ``` 
 var myObject = {
 
@@ -140,33 +147,45 @@ try {
 }
 ``` 
 
-__*Decorator*__
+----
+
+### Decorator
 
 Tweaking objects at runtime by adding functionality from predefined decorator
 objects.
 
-__*Strategy*__
+----
+
+### Strategy
 
 Keeping the same interface while selecting the best strategy to handle the specific
 task (context).
 
-__*Façade*__
+----
+
+### Façade
 
 Providing a more convenient API by wrapping common (or poorly designed)
 methods into a new one.
 
-__*Proxy*__
+----
+
+### Proxy
 
 Wrapping an object to control the access to it, with the goal of avoiding expensive
 operations by either grouping them together or performing them only when really
 necessary.
 
-__*Mediator*__
+----
+
+### Mediator
 
 Promoting loose coupling by having your objects not “talk” to each other directly
 but only though a mediator object.
 
-__*Observer*__
+----
+
+### Observer
 
 Loose coupling by creating “observable” objects that notify all their observers when
 an interesting event occurs (also called subscriber/publisher or “custom events”).
