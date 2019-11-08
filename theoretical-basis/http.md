@@ -16,12 +16,12 @@ Resources:
 * [How does an Internet work](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 
 Сontents:
-* [Request methods](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#Requestmethods )
+* [Request methods](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#request-methods )
 * [Headers](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#headers)
 * [CORS](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#CORS)
-* [HTTP Responce Status codes](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#HTTP)
+* [HTTP Responce Status codes](https://github.com/purumvisum/interview/blob/master/theoretical-basis/http.md#http-response-status-codes)
 
-#### Request methods 
+## Request methods 
 * *GET*
     * GET requests remain in the browser history
     * GET requests can be bookmarked
@@ -67,7 +67,7 @@ Resources:
     The PATCH method is used to apply partial modifications to a resource.
     
     
-#### Headers
+## Headers
 
 * *General headers*
      apply to both requests and responses, but with no relation to the data transmitted in the body.
@@ -122,7 +122,7 @@ Access-Control-Allow-Origin: null
 ``` 
 The Access-Control-Allow-Origin response header indicates whether the response can be shared with requesting code from the given origin.
 
-#### CORS
+## CORS
 __*Cross-Origin Resource Sharing (CORS)*__  is a mechanism that uses additional HTTP headers to tell browsers
  to give a web application running at one origin, access to selected resources from a different origin.
   A web application executes a cross-origin HTTP request when it requests a resource that has a 
@@ -136,7 +136,7 @@ For example, XMLHttpRequest and the Fetch API follow the same-origin policy. Thi
 application using those APIs can only request resources from the same origin the application was loaded 
 from, unless the response from other origins includes the right CORS headers.
 
-#### HTTP response status codes
+## HTTP response status codes
 * Informational responses (100–199),
 * Successful responses (200–299),
 * Redirects (300–399),
