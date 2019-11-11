@@ -8,6 +8,15 @@ JavaScript supports
 * OOP with __*prototypal inheritance*__.
 * functional with __*higher order functions*__, __*functions as arguments/values.*__
 
+### Content 
+1.  Programming paradigms
+2.  Higher order function
+3.  Object Oriented programming concept     
+    * Inheritance (Class Inheritance, Prototypal Inheritance)
+    * Encapsulation
+    * Polymorphism
+
+### Programming paradigms
 
 * __*Imperative*__ in which the programmer instructs the machine how to change its state,
     ```
@@ -21,6 +30,7 @@ JavaScript supports
     console.log(doubleMap([2, 3, 4])); // [4, 6, 8]
     ```
     * *object-oriented* which groups instructions together with the part of the state they operate on. 
+    
 * __*Declarative*__ in which the programmer merely declares properties of the desired result, but not how to compute it
     ```
     const doubleMap = numbers => numbers.map(n => n * 2);
