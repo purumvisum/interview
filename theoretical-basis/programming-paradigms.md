@@ -10,8 +10,7 @@ JavaScript supports
 
 ### Content 
 1. [Programming paradigms](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#programming-paradigms-1)
-2. [Higher order function](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Higher-order-function)
-3. [Object Oriented programming concept](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Object-Oriented-programming-concept)     
+2. [Object Oriented programming concept](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Object-Oriented-programming-concept)     
     * [Inheritance](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Inheritance) (Class Inheritance, Prototypal Inheritance)
     * [Encapsulation](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Encapsulation) 
     * [Polymorphism](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Polymorphism)
@@ -44,6 +43,16 @@ JavaScript supports
         * Avoid mutating state
         * Avoid side effects
         
+        
+         ##### Higher order function 
+         A higher order function is a function that takes a function as an argument, or returns a function. 
+
+         `.map()` and `.filter()` - take a function as an argument. They're both higher order functions.
+
+         [HOC (React)](https://reactjs.org/docs/higher-order-components.html)
+         A higher-order component is a function that takes a component and returns a new component.
+         Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
+
     * *Reactive* 
     
         `a:=b+c` - example
@@ -55,16 +64,6 @@ JavaScript supports
          
          `a` is being assigned the result of `b+c in the instant the expression is evaluated, 
          and later, the values of `b` and `c` can be changed with no effect on the value of `a`. 
-
-
-##  Higher order function 
-A higher order function is a function that takes a function as an argument, or returns a function. 
-
-`.map()` and `.filter()` - take a function as an argument. They're both higher order functions.
-
-#### [HOC (React)](https://reactjs.org/docs/higher-order-components.html)
-A higher-order component is a function that takes a component and returns a new component.
-Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
 
 
 ## Object Oriented programming concept 
