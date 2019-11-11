@@ -9,12 +9,12 @@ JavaScript supports
 * functional with __*higher order functions*__, __*functions as arguments/values.*__
 
 ### Content 
-1.  Programming paradigms
-2.  Higher order function
-3.  Object Oriented programming concept     
-    * Inheritance (Class Inheritance, Prototypal Inheritance)
-    * Encapsulation
-    * Polymorphism
+1. [Programming paradigms](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#programming-paradigms-1)
+2. [Higher order function](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Higher-order-function)
+3. [Object Oriented programming concept](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Object-Oriented-programming-concept)     
+    * [Inheritance](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Inheritance) (Class Inheritance, Prototypal Inheritance)
+    * [Encapsulation](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Encapsulation) 
+    * [Polymorphism](https://github.com/purumvisum/interview/blob/master/theoretical-basis/programming-paradigms.md#Polymorphism)
 
 ### Programming paradigms
 
