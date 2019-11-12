@@ -40,7 +40,7 @@ https://mail.google.com/gmail
 ## Browser render page
 
 Resources: 
-* [how the browser renders html css](https://medium.com/@mustafa.abdelmogoud/how-the-browser-renders-html-css-27920d8ccaa6)
+* [how the browser renders html css (M)](https://medium.com/@mustafa.abdelmogoud/how-the-browser-renders-html-css-27920d8ccaa6)
 
 1. *DOM Tree*: The browser creates the Document Object Model. It is a tree of objects. Each node represents an HTML tag.
 2. *CSSOM Tree*: Stands for CSS Object Model. It is basically a “map” of the CSS style which you can find on a web page. It is like the DOM but for CSS rules.
@@ -50,7 +50,10 @@ Resources:
 6. *Composite*: In this step, the browser combines all the layers together.
 
 #### Examples
+
 Change the width of an element:  layout -> paint -> compose
+
 Changed the color of the element: paint -> compose
+
 Change the transform of an element: compose
 
