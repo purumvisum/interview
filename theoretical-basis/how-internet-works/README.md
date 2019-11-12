@@ -1,9 +1,10 @@
-https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works
-https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work
+# How the Internet works
 
-https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306fdf
-
-![Network](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/network.gif)
+Resources: 
+* [How_the_Web_works(Video mdn)](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+* [How_does_the_Internet_work (Video mdn)](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
+* [Url and DNS](
+https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306fdf)
 
 1. The browser goes to the [DNS server](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/README.md#dns), and finds the real address of the server using IP address.
 2. The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client.
@@ -17,6 +18,9 @@ https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306f
 
 ### Resources: 
 * [DNS Explanation (video)](https://www.youtube.com/watch?v=72snZctFFtA)
+
+![Network](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/network.gif)
+
 
 ![Url](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/url.png )
 
