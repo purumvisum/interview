@@ -5,18 +5,15 @@ https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306f
 
 ![Network](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/network.gif)
 
-What Happens When You Type in a URL
-* You enter a URL into a web browser
-* The browser looks up the IP address for the domain name via DNS 
-    ( Domain Name Server (DNS) matches “wsvincent.com” to an IP address.)
-* The browser sends a HTTP request to the server
-* The server sends back a HTTP response
-* The browser begins rendering the HTML
-* The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats steps 3-5.
-* Once the page is loaded, the browser sends further async requests as needed.
+1. The browser goes to the [DNS server](), and finds the real address of the server using IP address.
+2. The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client.
+    This message, and all other data sent between the client and the server, 
+    is sent across your internet connection using TCP/IP. [More detailed video](https://www.youtube.com/watch?v=F27PLin3TV0&feature=emb_logo)
+3. If the server approves the client's request, the server sends the client a "200 OK" message and then starts sending the      website's files to the browser as a series of small chunks called data packets
+4. The browser assembles the small chunks into a complete website and displays it to you
 
 
-## DNS Steps
+## DNS
 
 ### Resources: 
 * [DNS Explanation (video)](https://www.youtube.com/watch?v=72snZctFFtA)
@@ -27,15 +24,13 @@ https://mail.google.com/gmail
 * The browser, Operating System and the router check their memory cache for the requested URL.
 * Root Name Server
 * Top Level Domain (TLD) servers (COM TLD name servers)
-* google name servers
-* authoritative name servers
-*  The authoritative name servers give the IP address associated with the resolver query (https://mail.google.com/gmail).
+* Google name servers
+* Authoritative name servers
+* The authoritative name servers give the IP address associated with the resolver query (https://mail.google.com/gmail).
 * The resolver then gives the IP address to the Operating System. 
 
-
-After establishing TCP connection client can get a data from the server.
-
-It gets Html page first and after loads all that in this html (styles, js, images)
+## Server send data
 
 ![client-server](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/web-site.jpg )
 
+## Browser render page
