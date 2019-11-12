@@ -3,7 +3,7 @@ https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Int
 
 https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306fdf
 
-[Network](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/network.gif)
+![Network](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/network.gif)
 
 What Happens When You Type in a URL
 * You enter a URL into a web browser
@@ -21,7 +21,7 @@ What Happens When You Type in a URL
 ### Resources: 
 * [DNS Explanation (video)](https://www.youtube.com/watch?v=72snZctFFtA)
 
-[Url](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/url.png )
+![Url](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/url.png )
 
 https://mail.google.com/gmail
 * The browser, Operating System and the router check their memory cache for the requested URL.
