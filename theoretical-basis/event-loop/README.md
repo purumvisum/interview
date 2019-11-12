@@ -1,7 +1,7 @@
 # Event Loop 
 
 ### Resourses:
-* [JSConf EU 2014, Event loop(video)](JSConf EU 2014)
+* [JSConf EU 2014, Event loop(video)](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 ## V8
 ![Event loop](https://github.com/purumvisum/interview/blob/master/theoretical-basis/event-loop/event-loop.png)
