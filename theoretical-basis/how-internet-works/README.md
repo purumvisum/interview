@@ -33,4 +33,9 @@ https://mail.google.com/gmail
 * The resolver then gives the IP address to the Operating System. 
 
 
-establish TCP connection
+After establishing TCP connection client can get a data from the server.
+
+It gets Html page first and after loads all that in this html (styles, js, images)
+
+![client-server](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/web-site.jpg )
+
