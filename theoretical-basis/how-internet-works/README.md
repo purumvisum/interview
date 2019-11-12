@@ -9,7 +9,7 @@ https://medium.com/@nickteixeira/anatomy-of-a-url-and-the-dns-process-1c200d306f
 2. The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client.
     This message, and all other data sent between the client and the server, 
     is sent across your internet connection using TCP/IP. [More detailed video](https://www.youtube.com/watch?v=F27PLin3TV0&feature=emb_logo)
-3. If the server approves the client's request, the (server sends the client)[https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/README.md#Server-send-data] a "200 OK" message and then starts sending the      website's files to the browser as a series of small chunks called data packets
+3. If the server approves the client's request, the [server sends the client](https://github.com/purumvisum/interview/blob/master/theoretical-basis/how-internet-works/README.md#Server-send-data) a "200 OK" message and then starts sending the      website's files to the browser as a series of small chunks called data packets
 4. The browser assembles the small chunks into a complete website and displays it to you
 
 
