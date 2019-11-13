@@ -137,6 +137,9 @@ application using those APIs can only request resources from the same origin the
 from, unless the response from other origins includes the right CORS headers.
 
 ## HTTP response status codes
+
+https://httpstatuses.com/ 
+
 * Informational responses (100–199),
 * Successful responses (200–299),
 * Redirects (300–399),
