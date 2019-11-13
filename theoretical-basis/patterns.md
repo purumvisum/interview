@@ -6,16 +6,16 @@ Resources:
 * [Iterators and Generators (mdn)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
 Сontents:
-* [MVC](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mvc)
-* [Singleton](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#singleton)
-* [Factory](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#factory)
-* [Mixins](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mixins)
-* [Decorator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#decorator)
-* [Façade](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#façade)
-* [Mediator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#mediator)
-* [Proxy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#proxy)
-* [Observer](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#observer)
-* [Strategy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/README.md#strategy)
+* [MVC](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#mvc)
+* [Singleton](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#singleton)
+* [Factory](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#factory)
+* [Mixins](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#mixins)
+* [Decorator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#decorator)
+* [Façade](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#façade)
+* [Mediator](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#mediator)
+* [Proxy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#proxy)
+* [Observer](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#observer)
+* [Strategy](https://github.com/purumvisum/interview/blob/master/theoretical-basis/patterns.md#strategy)
 ----
 
 ### MVC
