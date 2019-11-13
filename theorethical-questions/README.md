@@ -91,3 +91,73 @@ Running it a second time, you get:
 * Evaluate y = "string". The value of y is "string".
 * Log the value of y. This logs string.
 * Log the value of z. This logs string.
+
+
+# How does Array() differ from [] while creating a JavaScript array?
+
+Almost the same:
+
+`Array()` the same as `[]`
+
+`Array('9')` the same as `['9']`
+
+**But:**
+
+`Array(9)` the same as `[9]` // The first will create an uninitialized array of size n `[empty × 9]`  and the second `[9]`
+
+
+# call(), apply() and bind() Methods in JavaScript.
+
+```
+var car = { 
+    registrationNumber: "GA12345",
+    brand: "Toyota",
+
+    displayDetails: function(ownerName){
+        console.log(ownerName + ", this is your car: " + this.registrationNumber + " " + this.brand);
+    }
+}
+```
+**IS WORKING**
+
+`car.displayDetails(); // GA12345 Toyota`
+
+**WON'T WORK**
+```
+var myCarDetails =  car.displayDetails; 
+myCarDetails();
+```
+
+
+#### Bind()
+```
+var myCarDetails = car.displayDetails.bind(car, "Daria");
+myCarDetails(); // Daria, this is your car: GA12345 Toyota
+``` 
+
+#### call() and apply() 
+
+```
+var car = { 
+    registrationNumber: "GA12345",
+    brand: "Toyota"
+}
+
+function displayDetails(ownerName) {
+    console.log(ownerName + ", this is your car: " + this.registrationNumber + " " + this.brand);
+}
+```
+
+```
+displayDetails.apply(car, ["Daria"]); // Daria, this is your car: GA12345 Toyota
+
+displayDetails.call(car, "Daria"); // Daria, this is your car: GA12345 Toyota
+```
+
+# JS Primitives
+* string
+* number 
+* boolean 
+* null 
+* undefined
+* symbol (ECMAScript 2015).
