@@ -132,6 +132,27 @@ const KillingAnimal = function(name) {
 }
 ```
 
+### Why factories?
+
+Resources: 
+* [fun fun functions Video (Factory Functions in JavaScript)](https://www.youtube.com/watch?v=ImwrezYhw4w)
+
+``` 
+class Dog {
+    constructor() {
+        this.sound('woof');
+    }
+    talk() {
+        console.log(this.sound)
+    }
+}
+
+const mydog = new Dog();
+mydog.talk(); // works 
+
+$('button.myButton').click(mydog.talk()) // broken: this is different
+``` 
+
 ----
 
 ### Iterator

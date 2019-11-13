@@ -192,6 +192,43 @@ console.log(car.getName()); // Tesla
 console.log(car.getType()); // car
 ```
 
+### !BUT! (Composition over inheritance)
+#### Resources:
+* [fun fun function Composition over inheritance](https://youtu.be/wfMtDGfHWpA)
+
+Main Idea: use **can-do**, **has-a instead of **is-a** relationships.
+
+```
+// We have some behaviors
+const canSayHi = self => ({
+  sayHi: () => console.log(`Hi! I'm ${self.name}`)
+});
+const canEat = () => ({
+  eat: food => console.log(`Eating ${food}...`)
+});
+const canPoop = () => ({
+  poop: () => console.log('Going to 💩...')
+});
+``` 
+
+```
+const dog = name => {
+  const self = {
+    name
+  };
+
+  const dogBehaviors = self => ({
+    bark: () => console.log("Woff woff!"),
+    haveLunch: food => {
+      self.eat(food);
+      self.poop();
+    }
+  });
+
+  return Object.assign(self, dogBehaviors(self), canEat(), canPoop());
+}
+```
+
 ### Polymorphism
 In an OOP context, “polymorphism” almost always means just one thing: the overriding of inherited methods to
  facilitate calling the same method on
