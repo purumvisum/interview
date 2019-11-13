@@ -8,6 +8,6 @@ Interview questions and solutions
 * [Theoretical Questions](https://github.com/purumvisum/interview/tree/master/theorethical-questions/README.md)
 * [Code-writing Questions](https://github.com/purumvisum/interview/blob/master/code-questions/README.md)
 
-(Other Sources)[(https://github.com/purumvisum/interview/blob/master/other-sources.md]
+[Other Sources](https://github.com/purumvisum/interview/blob/master/other-sources.md)
 
 
